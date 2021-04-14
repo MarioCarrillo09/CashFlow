@@ -5,6 +5,7 @@
 #include<QtSql>
 #include<QSqlDatabase>
 #include<QMessageBox>
+#include "menuprincipal.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,8 +21,11 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void on_Ingresar_clicked();
+    void esconder();
 
 private:
     Ui::MainWindow *ui;
+    menuPrincipal  *ventana;
 };
 #endif // MAINWINDOW_H
